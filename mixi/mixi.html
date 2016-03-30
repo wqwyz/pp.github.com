@@ -1,0 +1,948 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>米西网作业</title>
+	<style>
+		html, body, div, p, h1, h2, h3, h4, ul, li, em, a, dl,dt,dd { padding: 0;margin: 0;}
+		.body {
+			font-size: 12px;
+		}
+		/*head  b*/
+		.top {
+			width: 100%;
+			height: 30px;
+			background: #F1F1F1;
+			border-bottom: 1px solid #E8E8E8;
+		}
+		.top .heart {
+			width: 1000px;
+			height: 30px;
+			margin: 0 auto;
+		}		
+		.top .heart .left {
+			padding-top: 8px;
+		}
+		 .top .heart .left h3 {
+			font-size: 12px;
+			color: #A8A8A8;
+			font-weight: normal;
+			float: left;
+			margin-right: 20px;
+		}
+		.top .heart .left img {
+			float: left;
+		}
+		.top .heart .left a {			
+			text-decoration: none;
+			color: #E47E73;
+			float: left;
+			font-size: 12px;
+		}
+		.top .heart .left .denglu {
+			padding-right: 12px;
+			border-right: 1px solid #E47E73;
+			margin-right: 6px;
+		}
+	    .top .heart .right img {
+			float: right;
+		}
+		.top .heart .right a {
+			float: right;
+			text-decoration: none;
+			font-size: 12px;
+			color: #A8A8A8;
+		}
+	    .top .heart .right .swsy {
+			padding: 0 10px;
+			border-right: 1px solid #A8A8A8;
+			margin-right: 10px;
+		}
+		.top .heart .right .ysj {
+			display: inline-block;
+			width: 131px;
+			height: 16px;
+			background: url(images/右上小图标.png);
+		}
+		.mixi {
+			width: 1000px;
+			height: 104px;
+			margin: 0 auto;
+		}
+	    .mixi .logo {
+			display: inline-block;
+			width: 176px;
+			height: 56px;
+			background: url(images/logo.png);
+			border-right: 1px solid #A8A8A8;
+			margin-top: 24px;
+			float: left;
+		}
+		.mixi h3 {
+			font-size: 12px;
+			float: left;
+			margin-top: 51px;
+			margin-left: 11px;
+		}
+		.mixi span {
+			color: #A8A8A8;
+			font-weight: normal;
+		}
+		.mixi h3 span .city {
+			display: inline-block;
+			width: 9px;
+			height: 12px;
+			background: url(images/city.png);
+			margin: 0 3px;
+		}
+		.mixi img {
+			margin-top: 31px;
+			float: right;
+		}
+		.nav {
+			height: 39px;
+			background: #FF7900;
+			border: 1px solid #F17200;
+		}
+		.nav .heart {
+			width: 1000px;
+			height: 39px;
+			margin: 0 auto;
+		}
+		.nav .heart .left a {
+			display: inline-block;
+			width: 103px;
+			height: 39px;
+			float: left;
+			color: white;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 39px;
+			text-decoration: none;
+		}
+		.nav .heart .left a:hover {
+			background: #DA531D;
+		}
+		.nav .heart .lianxiwomen {
+			float: right;
+		}
+		/*head  e*/
+		/*banner  b*/
+		.banner {
+			width: 100%;
+			height: 413px;
+			background: #EBEBEB;
+			border-bottom: 1px solid #E3E3E3;
+		}
+		.banner .shangjia {
+			width: 1000px;
+			height: 55px;
+			border-bottom: 1px solid #ECDCDC;
+			margin: 0 auto;
+		}
+		.banner .shangjia img {
+			margin-top: 22px;
+			margin-left: 12px;
+			float: left;
+		}
+		.banner .shangjia p {
+			font-size: 18px;
+			color: #7E6E7E;
+			margin-left: 6px;
+			float: left;
+			margin-top: 29px;
+		}
+		.banner .shangjia a {
+			text-decoration: none;
+			float: right;
+			color: #A8A8A8;
+			font-size: 12px;
+			margin-left: 20px;
+			margin-top: 33px;
+		}
+		.banner .shangjia a:hover {
+			text-decoration: underline;
+		}
+		.banner .jiudian {
+			width: 1000px;
+			height: 305px;
+			margin: 0 auto;
+		}
+		.banner .jiudian div {
+			width: 234px;
+			float: left;
+			background-color: white;
+			margin-top: 20px;
+			margin-bottom: 24px;
+		}
+		.banner .jiudian .two {
+			margin: 20px 21px 24px 21px;
+		}
+		.banner .jiudian .three {
+			margin-right: 21px;
+		}
+		.banner .jiudian div .shang {
+			width: 234px;
+			height: 40px;
+			font-size: 14px;
+			color: #575757;
+			text-align: center;
+			line-height: 40px;
+			border-bottom: 1px dashed #DEDEDE;
+			font-weight: bold;
+		}
+		.banner .jiudian div .xia {
+			font-size: 12px;
+			color: #A8A8A8;
+			font-weight: normal;
+			margin-left: 11px;
+			margin-top: 14px;
+		}
+		.banner .jiudian div .money {
+			display: inline-block;
+			margin-left: 16px;
+			color: #DE7E27;
+			font-size: 13px;
+			font-weight: 500;
+		}
+		.banner .jiudian div .place {
+			color: #464646;
+			font-weight: 500;
+		}
+		.banner .jiudian div a {
+			display: inline-block;
+			width: 93px;
+			height: 22px;
+			background-color: #C6C6C6;
+			text-decoration: none;
+			color: white;
+			line-height: 22px;
+			text-align: center;
+			margin: 14px 70px 5px;
+		}
+		.banner .jiudian div a:hover {
+			text-decoration: underline;
+			background-color: #FF7800;
+		}
+		/*banner  e*/
+		/*content  b*/
+		.content {
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.clearfix:after {
+			content:"";
+			height: 0;
+			line-height: 0;
+			visibility: hidden;
+			display: block;
+			clear: both;
+		}
+		.content .left {
+			width: 676px;
+			float: left;
+		}
+		.content .left .changdi {
+			width: 676px;
+			height: 40px;
+			border-bottom: 1px solid #D8D8D8;
+		}
+		.content .left .changdi div {
+			width: 110px;
+			height: 40px;
+			border-bottom: 1px solid #FF7800;
+		}
+		.content .left div h3 {
+			float: left;
+			color: #FF7800;
+			margin-top: 15px;
+			margin-left: 4px;
+		}
+		.content .left div img {
+			float: left;
+			margin-top: 15px;
+		}
+		.content .xuan {
+			width: 676px;
+			border-bottom: 1px dashed #D8D8D8;
+			padding-bottom: 19px;
+		}
+		.content .xuan .suoyouquyu {
+			width: 676px;
+			height: 20px;
+			margin-top: 12px;
+		}
+		.content .xuan .suoyouquyu p,a {
+			float: left;
+			text-decoration: none;
+			font-size: 12px;
+			color: #767676;
+		}
+		.content .xuan .suoyouquyu p {
+			margin-left: 12px;
+		}
+		.content .xuan .suoyouquyu a {
+			margin-right: 33px;
+		}
+		.content .xuan .suoyouquyu .buxian {
+			margin: 0 20px;
+			width: 44px;
+			height: 20px;
+			background-color: #FF7800;
+			text-align: center;
+			line-height: 20px;
+			color: white;
+		}
+		.content .xuan .suoyouquyu .nansha {
+			margin-right: 0;
+		}
+		.content .xuan .two,.three {
+			margin-top: 18px;
+			margin-bottom: 18px;
+		}
+		.content .xuan .four {
+			margin-bottom: 12px;
+		}
+		.content .xuan a:hover {
+			text-decoration: underline;
+		}
+		.content .xuan .sanjiao {
+			width: 11px;
+			height: 6px;
+			background: url(images/场地三角.png);
+			margin-left: 327px;
+		}
+		.content .left .xiao {
+			width: 676px;
+			height: 16px;
+			margin-top: 19px;
+		}
+		.content .left .xiao p {
+			height: 16px;
+			margin-left: 11px;
+			font-size: 12px;
+			color: #767676;
+			float: left;
+		}
+		.content .left .xiao p span {
+			color: #FF7800;
+		}
+		.content .left .xiao a {
+			display: inline-block;
+			width: 138px;
+			height: 16px;
+			background: url(images/图标.png);
+			float: right;
+		}
+		.content .left .paixu {
+			width: 676px;
+			height: 15px;
+			margin-top: 21px;
+		}
+		.content .left .paixu p,.jiage,.zhuoshu {
+			float: left;
+		}
+		.content .left .paixu p {
+			margin-left: 11px;
+			color: #FF7800;
+			font-size: 11px;
+			font-weight: bold;
+		}
+		.content .left .paixu .jiage,.zhuoshu {
+			display: inline-block;
+			width: 36px;
+			height: 15px;
+			background: url(images/上下.png) no-repeat right;
+		}
+		.content .left .paixu .jiage {
+			margin-left: 22px;
+			margin-right: 36px;
+		}
+		.content .left .paixu input,.youyouhui,.libao,.liebiao,.datu {
+			float: right;
+		}
+		.content .left .paixu .liebiao {
+			display: inline-block;
+			background: url(images/列表.png) no-repeat left;
+			padding-left: 25px;
+			margin-left: 27px;
+			margin-right: 16px;
+		}
+		.content .left .paixu .datu {
+			display: inline-block;
+			background: url(images/大图.png) no-repeat left;
+			padding-left: 22px;
+		}
+		.content .left .paixu span {
+			font-size: 12px;
+			color: #767676;
+		}
+		.content .left .paixu .libao {
+			margin-right: 17px;
+		}
+		.content .left .huiyi {
+			width: 676px;
+			border: 1px solid white;
+			margin-top: 10px;
+		}
+		.content .left .huiyi .kuai {
+			width: 676px;
+			height:185px;
+			border-bottom: 1px dashed #DFDFDF; 
+		}
+		.content .left .huiyi .demo {
+			width: 676px;
+			height: 165px;
+			margin: 20px 0;
+			background: url(images/5.png) no-repeat left;
+		}
+		.content .left .huiyi .demo .xi {
+			margin: 15px 0 15px 264px;
+			font-size: 12px;
+			color: #767676;
+			position: relative;
+		}
+		.content .left .huiyi .demo .xi a{
+			padding-left: 19px;
+		}
+		.content .left .huiyi .demo .xi h3 {
+			color: #FF7800;
+		}
+		.content .left .huiyi .demo .xi .jiege {
+			position: absolute;
+			top: 48px;
+			left: 0;
+		}
+		.content .left .huiyi .demo .xi .diduan {
+			position: absolute;
+			top: 81px;
+			left: 0;
+		}
+		.content .left .huiyi .demo .xi span {
+			font-size: 14px;
+			color: #DE7E27;
+		}
+		.content .left .huiyi .demo .xi img {
+			float: none;
+			position: absolute;
+			top: 110px;
+			left: 0;
+		}
+		.content .left .huiyi .demo .xi a {
+			width: 43px;
+			height: 14px;
+		}
+		.content .left .huiyi .demo .xi .yd {
+			background: url(images/注册.png) no-repeat left;
+			position: absolute;
+			top: 128px;
+			left: 314px;
+		}
+		.content .left .huiyi .demo .xi .sc {
+			background: url(images/登录.png) no-repeat left;
+			position: absolute;
+			top: 128px;
+			left: 369px;
+		}
+		.content .left .huiyi .demo .line {
+			height: 20px;
+			border-bottom: 1px dashed #DFDFDF;
+		}
+		.content .left .more {
+			display: inline-block;
+			width: 60px;
+			height: 11px;
+			background: url(images/more.png) no-repeat right;
+			padding-right: 13px;
+			margin-left: 300px;
+			margin-top: 27px;
+		}	
+		.content .right {
+			width: 308px;
+			float: right;
+		}
+		.content .right .paihang {
+			height: 41px;
+			border-bottom: 1px solid #E8E8E8;
+			background: url(images/酒店排行.png) no-repeat left bottom;
+			position: relative;
+		}
+		.content .right .paihang span {
+			color: #FF7800;
+			font-size: 18px;
+			font-weight: bold;
+			position: absolute;
+			top: 19px;
+			left: 27px;
+		}
+		.content .right .paihang div {
+			width: 138px;
+			height: 41px;
+			border-bottom: 1px solid #FF7800;
+		}
+		.content .right .xi {
+			width: 308px;
+			height: 546px;
+			padding-top: 25px;
+			position: relative;
+		}
+		.content .right .xi .one {
+			height: 80px;
+			background: url(images/6.png) no-repeat 40px;
+			margin-bottom: 9px;
+		}
+		.content .right .xi .one img {
+			width: 26px;
+			height: 21px;
+			position: absolute;
+			top: 25px;
+			left: 0;
+		}
+		.content .right .xi .one p {
+			font-size: 15px;
+			color: #767676;
+		}
+		.content .right .xi .one .laoma {
+			color: #464646;
+			font-weight: bold;
+			position: absolute;
+			top: 33px;
+			left: 183px;
+		}
+		.content .right .xi .one .jiage {
+			position: absolute;
+			top: 60px;
+			left: 183px;
+		}
+		.content .right .xi .one .zhuo {
+			position: absolute;
+			top: 86px;
+			left: 183px;
+		}
+		.content .right .xi .two {
+			width: 308px;
+			height: 21px;
+			background: url(images/二.png) no-repeat left;
+			padding-left: 40px;
+			margin-bottom: 23px;
+		}
+		.content .right .xi .two p {
+			font-size: 15px;
+			color: #767676;
+			line-height: 21px;
+		}
+		.content .right .xi .three {
+			background: url(images/三.png) no-repeat left;
+		}
+		.content .right .xi .four {
+			background: url(images/四.png) no-repeat left;
+		}
+		.content .right .xi .five {
+			background: url(images/五.png) no-repeat left;
+		}
+		.content .right .xi .six {
+			background: url(images/六.png) no-repeat left;
+		}
+		.content .right .xi .seven {
+			background: url(images/七.png) no-repeat left;
+		}
+		.content .right .xi .lianxi {
+			width: 676px;
+			height: 70px;
+			margin-top: 20px;
+			background: url(images/bg.gif) no-repeat -3px 0;
+			position: relative;
+		}
+		.content .right .xi .lianxi .phone {
+			color: #767676;
+			position: absolute;
+			top: 0;
+			left: 77px;
+			font-size: 15px;
+		}
+		.content .right .xi .lianxi .number {
+			font-size: 35px;
+			color: #FF9349;
+			position: absolute;
+			top: 20px;
+			left: 77px;
+			font-weight: bold;
+		}
+		.content .right .xi .erweima {
+			width: 686px;
+			height: 108px;
+			background: url(images/bg.gif) no-repeat no-repeat 0-92px;
+			position: relative;
+		}
+		.content .right .xi p {
+			font-size: 15px;
+			color: #767698;
+		}
+		.content .right .xi span {
+			color: #FF9349;
+		}
+		.content .right .xi .s {
+			position: absolute;
+			top: 19px;
+			left: 191px;
+		}
+		.content .right .xi .w {
+			position: absolute;
+			top: 40px;
+			left: 120px;
+		}
+		.content .right .xi .e {
+			position: absolute;
+			top: 62px;
+			left: 120px;
+		}
+		.content .right .xi .t {
+			position: absolute;
+			top: 82px;
+			left: 120px;
+		}
+		.content .back_top {
+			display: inline-block;
+			width: 60px;
+			height: 60px;
+			background: url(images/bg.gif) no-repeat 0 -300px;
+			position: fixed;
+			right: 0;
+			bottom:0;
+		}
+		/*	content  e*/
+		/*	foot  b*/
+		.foot {
+			width: 100%;
+			height: 116px;
+			background: url(images/bottom.png) repeat-x;
+			margin-top: 61px;
+		}
+		.foot .z {
+			width: 1000px;
+			height: 116px;
+			margin: 0 auto;
+			color: #5B6767;
+			font-size: 12px;			
+		}
+		.foot .z li {
+			float: left;
+			list-style: none;
+			/*margin-top: 43px;*/
+		}
+		.foot .z ul {
+			padding-top: 43px;
+			margin-bottom: 10px;
+			padding-left: 263px;
+		}
+		.foot .z a {
+			padding: 0 11px;
+		}
+		.foot .z p {
+			text-align: center;
+			color: #5B6767;
+		}
+		/*	foot  e*/
+	</style>
+</head>
+<body>
+	<!--head  e-->
+	<div class="top">
+		<div class="heart">
+			<div class="left">
+				<h3>唯一的非中介平台，最快的场地搜索和查询工具！</h3>
+				<img src="images/登录.png"/>
+				<a href="#" class="denglu">登录</a>
+				<img src="images/注册.png"/>
+				<a href="#">注册</a>
+			</div>
+			<div class="right">
+				<a href="#">加入收藏</a>
+				<a href="#" class="swsy">设为首页</a>
+				<a href="#" class="ysj"></a>								
+			</div>
+		</div>
+	</div>
+	<div class="mixi">
+		<a href="#" class="logo"></a>	
+		<h3 class="chengshi">上海<span>[切换城市<a href="#" class="city"></a>]</span></h3>
+		<img src="images/全国热线电话.png" />					
+	</div>
+	<div class="nav">
+		<div class="heart">
+			<div class="left">
+				<a href="#">首页</a>
+				<a href="#">寻找</a>
+				<a href="#">场地</a>
+				<a href="#">发布</a>
+				<a href="#">需求</a>
+			</div>
+			<img src="images/nav-head-bg_03.gif" class="lianxiwomen"/>
+		</div>
+	</div>
+	<!--head  e-->
+	<!--banner  b-->
+	<div class="banner">
+		<div class="shangjia">
+			<img src="images/设置.png"/>
+			<p>商家类型</p>
+			<a href="#">更多>></a>
+			<a href="#">Club</a>
+			<a href="#">游船游艇</a>
+			<a href="#">西餐厅</a>
+			<a href="#">会议中心</a>
+			<a href="#">高级会所</a>
+			<a href="#">知名酒家</a>
+			<a href="#">三星级酒店</a>
+			<a href="#">四星级酒店</a>
+			<a href="#">五星级酒店</a>				
+		</div>
+		<div class="jiudian">
+			<div>
+				<img src="images/1.png"/>
+				<p class="shang">华都皇冠假日酒店(五星级酒店)</p>
+				<p class="xia">最低消费：<span class="money">¥160000起</span></p>
+				<p class="xia">区域：<span class="place">花都区  | 机场</span></p>
+				<a href="#">立即预定</a>
+			</div>
+			<div class="two">
+				<img src="images/2.png"/>
+				<p class="shang">华都皇冠假日酒店(五星级酒店)</p>
+				<p class="xia">最低消费：<span class="money">¥160000起</span></p>
+				<p class="xia">区域：<span class="place">花都区  | 机场</span></p>
+				<a href="#">立即预定</a>
+			</div>
+			<div class="three">
+				<img src="images/3.png"/>
+				<p class="shang">华都皇冠假日酒店(五星级酒店)</p>
+				<p class="xia">最低消费：<span class="money">¥160000起</span></p>
+				<p class="xia">区域：<span class="place">花都区  | 机场</span></p>
+				<a href="#">立即预定</a>
+			</div>
+			<div>
+				<img src="images/4.png"/>
+				<p class="shang">华都皇冠假日酒店(五星级酒店)</p>
+				<p class="xia">最低消费：<span class="money">¥160000起</span></p>
+				<p class="xia">区域：<span class="place">花都区  | 机场</span></p>
+				<a href="#">立即预定</a>
+			</div>
+		</div>
+	</div>
+	<!--banner  e-->
+	<!--content  b-->
+	<div class="content clearfix">
+		<div class="left">
+			<div class="changdi">
+				<div>
+					<img src="images/场地筛选.png"/>
+					<h3>场地筛选</h3>
+				</div>												
+			</div>
+			<div class="xuan">
+				<div class="suoyouquyu one">
+					<p>所有区域</p>
+					<a href="#" class="buxian">不限</a>
+					<a href="#">天河区</a>
+					<a href="#">越秀区</a>
+					<a href="#">珠海区</a>
+					<a href="#">荔枝湾</a>
+					<a href="#">白云区</a>
+					<a href="#">番禹区</a>
+					<a href="#">近郊</a>
+					<a href="#" class="nansha">南沙区</a>
+				</div>
+				<div class="suoyouquyu two">
+					<p>场地类型</p>
+					<a href="#" class="buxian">不限</a>
+					<a href="#">五星级</a>
+					<a href="#">四星级</a>
+					<a href="#">三星级</a>
+					<a href="#">特色餐厅</a>
+					<a href="#">婚礼</a>
+				</div>
+				<div class="suoyouquyu three">
+					<p>每桌价格</p>
+					<a href="#" class="buxian">不限</a>
+					<a href="#">2000以下</a>
+					<a href="#">2000-3000</a>
+					<a href="#">3000-4000</a>
+					<a href="#">4000-6000</a>
+					<a href="#">6000以上</a>
+				</div>
+				<div class="suoyouquyu four">
+					<p>容纳桌数</p>
+					<a href="#" class="buxian">不限</a>
+					<a href="#">10桌以下</a>
+					<a href="#">10-30桌</a>
+					<a href="#">30-40桌</a>
+					<a href="#">40-60桌</a>
+					<a href="#">60桌以上</a>
+				</div>
+				<a href="#" class="sanjiao"></a>
+			</div>
+			<div class="xiao">
+				<p>找到婚宴酒家<span>8888</span>家，您可以进一步筛选缩小范围。</p>
+				<a href="#"></a>
+			</div>
+			<div class="paixu">
+				<p>默认排序：</p>
+				<a href="#" class="jiage">价格</a>
+				<a href="#" class="zhuoshu">桌数</a>
+				<a href="#" class="datu">大图</a>
+				<a href="#" class="liebiao">列表</a>
+				<span class="youyouhui">有优惠</span><input type="checkbox" / class="youhui">
+				<span class="libao">有礼包</span><input type="checkbox" />		
+			</div>
+			<div class="huiyi">
+				<div class="kuai">
+					<div class="demo">
+						<div class="xi">
+							<h3 class="huiyi">广州国际会议中心(会议中心)</h3>
+							<p class="jiege">婚宴价格：<span>600-2000元/桌</span> 容纳桌数<span>25桌</span></p>
+							<p class="diduan">广州天河新天希尔顿酒店位于市中心商务区的核心地段，2000平方米的宴会</p>
+							<img src="images/星星.png"/>
+							<a href="#" class="yd">预定</a>
+							<a href="#" class="sc">收藏</a>
+						</div>
+					</div>
+				</div>				
+				<div class="kuai">
+					<div class="demo">
+						<div class="xi">
+							<h3 class="huiyi">广州国际会议中心(会议中心)</h3>
+							<p class="jiege">婚宴价格：<span>600-2000元/桌</span> 容纳桌数<span>25桌</span></p>
+							<p class="diduan">广州天河新天希尔顿酒店位于市中心商务区的核心地段，2000平方米的宴会</p>
+							<img src="images/星星.png"/>
+							<a href="#" class="yd">预定</a>
+							<a href="#" class="sc">收藏</a>
+						</div>
+					</div>
+				</div>
+				<div class="kuai">
+					<div class="demo">
+						<div class="xi">
+							<h3 class="huiyi">广州国际会议中心(会议中心)</h3>
+							<p class="jiege">婚宴价格：<span>600-2000元/桌</span> 容纳桌数<span>25桌</span></p>
+							<p class="diduan">广州天河新天希尔顿酒店位于市中心商务区的核心地段，2000平方米的宴会</p>
+							<img src="images/星星.png"/>
+							<a href="#" class="yd">预定</a>
+							<a href="#" class="sc">收藏</a>
+						</div>
+					</div>
+				</div>
+				<div class="kuai">
+					<div class="demo">
+						<div class="xi">
+							<h3 class="huiyi">广州国际会议中心(会议中心)</h3>
+							<p class="jiege">婚宴价格：<span>600-2000元/桌</span> 容纳桌数<span>25桌</span></p>
+							<p class="diduan">广州天河新天希尔顿酒店位于市中心商务区的核心地段，2000平方米的宴会</p>
+							<img src="images/星星.png"/>
+							<a href="#" class="yd">预定</a>
+							<a href="#" class="sc">收藏</a>
+						</div>
+					</div>
+				</div>
+				<div class="kuai">
+					<div class="demo">
+						<div class="xi">
+							<h3 class="huiyi">广州国际会议中心(会议中心)</h3>
+							<p class="jiege">婚宴价格：<span>600-2000元/桌</span> 容纳桌数<span>25桌</span></p>
+							<p class="diduan">广州天河新天希尔顿酒店位于市中心商务区的核心地段，2000平方米的宴会</p>
+							<img src="images/星星.png"/>
+							<a href="#" class="yd">预定</a>
+							<a href="#" class="sc">收藏</a>
+						</div>
+					</div>
+				</div>
+				<div class="kuai">
+					<div class="demo">
+						<div class="xi">
+							<h3 class="huiyi">广州国际会议中心(会议中心)</h3>
+							<p class="jiege">婚宴价格：<span>600-2000元/桌</span> 容纳桌数<span>25桌</span></p>
+							<p class="diduan">广州天河新天希尔顿酒店位于市中心商务区的核心地段，2000平方米的宴会</p>
+							<img src="images/星星.png"/>
+							<a href="#" class="yd">预定</a>
+							<a href="#" class="sc">收藏</a>
+						</div>
+					</div>
+				</div>			
+				<div class="kuai">
+					<div class="demo">
+						<div class="xi">
+							<h3 class="huiyi">广州国际会议中心(会议中心)</h3>
+							<p class="jiege">婚宴价格：<span>600-2000元/桌</span> 容纳桌数<span>25桌</span></p>
+							<p class="diduan">广州天河新天希尔顿酒店位于市中心商务区的核心地段，2000平方米的宴会</p>
+							<img src="images/星星.png"/>
+							<a href="#" class="yd">预定</a>
+							<a href="#" class="sc">收藏</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="more">查看更多</a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="paihang">
+				<span>酒店排行</span>
+				<div></div>
+			</div>
+			<div class="xi">
+				<div class="one">
+					<img src="images/一.png"/>
+					<p class="laoma">老马旗舰店</p>
+					<p class="jiage">3888-58888每桌</p>
+					<p class="zhuo">最大容纳: 32桌</p>
+				</div>
+				<div class="two">
+					<p>斯沃琪和平饭店艺术中心婚礼会馆</p>
+				</div>			
+				<div class="three two">
+					<p>斯沃琪和平饭店艺术中心婚礼会馆</p>
+				</div>
+				<div class="four two">
+					<p>斯沃琪和平饭店艺术中心婚礼会馆</p>
+				</div>
+				<div class="five two">
+					<p>斯沃琪和平饭店艺术中心婚礼会馆</p>
+				</div>
+				<div class="six two">
+					<p>斯沃琪和平饭店艺术中心婚礼会馆</p>
+				</div>
+				<div class="seven two">
+					<p>斯沃琪和平饭店艺术中心婚礼会馆</p>
+				</div>
+				<div class="lianxi">
+					<p class="phone">全国热线电话:</p>
+					<p class="number">400-800-400</p>
+				</div>
+				<div class="erweima">
+					<p class="s">扫一扫</p>
+					<p class="w">微信二维码分享更多精彩>></p>
+					<p class="e">email:123456789@qq.com</p>
+					<p class="t"><span>2,000,000</span>人的选择</p>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="back_top"></a>
+	</div>
+	<!--content  e-->
+	<!--foot  b-->
+	<div class="foot">
+		<div class="z">
+			<ul class="clearfix">
+				<li><a href="#">关于米西网</a></li>
+				<li><a href="#">关于米西网</a></li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">常见问题</a></li>
+				<li><a href="#">网站地图</a></li>
+			</ul>
+			<p>
+				Copyright &copy; 2014 NiPic.com all rights Reserved 版权所有 米西网 ICP设备号：9999999号 电话：800-400-400
+			</p>
+		</div>
+	</div>
+	<!--foot  e-->
+</body>
+</html>

@@ -1,0 +1,405 @@
+﻿@charset "UTF-8";
+/*css ��ʼ�� */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset��ϱ��е����Ԫ��*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*����б���*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "����";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*��ֹ�����ı����϶�*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  ȥ��ͼƬ�Ͳ�Ĭ�ϵ�3���ؿհ׷�϶*/
+table {
+    border-collapse: collapse;			/*�ϲ������*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*���壬Unicode��ͳһ��*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {				
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*������*/
+.w {
+    /*���� ��ȡ */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+/*.site-nav  b*/
+.site-nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #F1F1F1;
+}
+.site-nav-send ,
+.site-nav .jiao {
+    height: 30px;
+    position: relative;
+    padding: 0 25px 0 10px;
+}
+.site-nav .jiao:hover {
+    background-color: white;
+}
+.site-nav-send:hover {
+    background-color: white;
+}
+.site-nav-send i ,
+.jiao i {
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    font: 400 15px/15px "宋体";
+    width: 15px;
+    height: 8px;
+    overflow: hidden;
+}
+.site-nav-send i s,
+.jiao i s {
+    position: absolute;
+    top: -7px;
+    left: 0;
+}
+.site-nav li {
+    float: left;
+    padding: 0 11px;
+}
+.site-nav .line {
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    padding: 0 0;
+    background-color: #DDDDDD;
+}
+.site-nav .tel {
+    padding-left: 25px;
+}
+.site-nav .shouji {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background: url(../images/tel.png) no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+}
+/*.site-nav  e*/
+/*.top-banner  b*/
+.top-banner {
+    height: 80px;
+    background-color: #8B25C6;
+}
+.top-banner .top {
+    position: relative;
+}
+.top-banner .top .colse {
+    position: absolute;
+    top:  10px;
+    right: 2px;
+    width: 19px;
+    height: 19px;
+    background: url(../images/close.png) no-repeat;
+}
+.top-banner .top .colse:hover {
+    background-position: bottom;
+}
+/*.top-banner  e*/
+/*.search  b*/
+.jd-logo {
+    float: left;
+    width: 362px;
+    height: 60px;
+    padding: 20px 0;
+    position: relative;
+}
+.jd-logo a {
+    display: inline-block;
+    width: 362px;
+    height: 60px;
+    background: url(../images/jd-logo.png) no-repeat;
+    text-indent: -999px;
+    }
+.jd-logo .dong {
+    display: inline-block;
+    width: 180px;
+    height: 80px;
+    background: url("../images/dong.gif") no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 165px;
+}
+.jd-input {
+    float: left;
+    width: 538px;
+    height: 36px;
+    margin-top: 26px;
+}
+.jd-input input {
+    width: 444px;
+    height: 24px;
+    border: 2px solid #B61D1D;
+    padding: 4px;
+    font: 400 14px/32px "microsoft yahei";
+    color: #999999;
+    float: left;
+}
+.jd-input button {
+    width: 82px;
+    height: 36px;
+    background-color: #B61D1D;
+    font: bold 16px/36px "microsoft yehei";
+    float: left;
+    color: #fff;
+}
+.jd-car {
+    width: 139px;
+    height: 34px;
+    border: 1px solid #DFDFDF;
+    margin: 25px 65px 0 0;
+    float: right;
+    background-color: #F9F9F9;
+    position: relative;
+}
+.jd-car a {
+    padding-left: 43px;
+    font-size: 12px;
+    line-height: 34px;
+}
+.jd-car .icon1 {
+    width: 18px;
+    height: 16px;
+    background: url(../images/tel.png) no-repeat 0 -90px;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+}
+.jd-car .icon2 {
+    font: 400 13px/34px "simsun";
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+.jd-car .icon3 {
+    width: 16px;
+    height: 14px;
+    border-radius: 8px 8px 8px 0;
+    background-color: #C81623;
+    position: absolute;
+    top: -5PX;
+    right: 15PX;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+}
+.jd-more {
+    float: left;
+    width: 500px;
+    height: 28px;
+}
+.jd-more a {
+    margin-right: 10px;
+    line-height: 28px;
+}
+/*.search  e*/
+/*.foot  b*/
+.foot .slogen {
+    height: 94px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.foot .slogen i {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+.foot .slogen .icon1 {
+    margin-left: -608px;
+}
+.foot .slogen .icon2 {
+    margin-left: -304px;
+}
+.foot .slogen .icon4 {
+    margin-left: 304px;
+}
+.foot .shopping {
+    height: 202px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.foot dl {
+    width: 200px;
+    float: left;
+    margin-top: 19px;
+}
+.foot .last-dl {
+    width: 100px;
+}
+.foot dt,
+.map .qx {
+    font: 400 16px/27px "microsoft yahei";
+}
+.map .qx {
+    margin-top: 5px;
+}
+.foot dd,
+.map .jt {
+    font: 12px/20px "simsun";
+}
+.map .jt {
+    margin-top: 12px;
+}
+.map a {
+    float: right;
+}
+.map {
+    width: 203px;
+    height: 168px;
+    background: url(../images/china.png) no-repeat left bottom;
+    float: right;
+    margin-top: 15px;
+    padding: 0 6px 0 18px;
+}
+.others {
+    text-align: center;
+}
+.others a {
+    display: inline-block;
+    margin: 0 10px;
+}
+.others-a {
+    margin: 23px 0 15px 0;
+}
+.others p {
+    font: 12px/18px "simsun";
+}
+.last {
+    text-align: center;
+}
+.last i {
+    margin-right: 10px;
+}
+.mes1 {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../images/mes1.png) no-repeat;
+}
+.mes2 {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../images/mes2.png) no-repeat;
+}
+.mes3 {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../images/mes3.png) no-repeat;
+}
+.mes4 {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../images/mes4.png) no-repeat;
+}
+.mes5 {
+    display: inline-block;
+    width: 185px;
+    height: 32px;
+    background: url(../images/mes5.png) no-repeat;
+}
+/*.foot  e*/
+

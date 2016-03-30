@@ -1,0 +1,126 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+.jd-topBar {
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    background: url(../images/header-bg.png) repeat-x;
+    background-size: 1px 44px;
+    position: absolute;
+}
+.jd-topBar .icon-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    background-position: -20px 0;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.jd-topBar form {
+    width: 100%;
+    height: 44px;
+    padding: 0 40px;
+}
+.jd-topBar form input {
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-top: 6px;
+}
+.jd-topBar .icon-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+    background-position: -60px 0;
+    padding: 12px 10px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.jd-category {
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+}
+.jd-category-left {
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+.jd-category-left .jd-category-left-con li {
+    height: 50px;
+    width: 90px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    line-height: 50px;
+    background: #f3f4f6;
+}
+.jd-category-left .jd-category-left-con li.now{
+    background: #fff;
+    border-right: none;
+}
+.jd-category-left .jd-category-left-con li.now a{
+    color: #F15353;
+}
+.jd-category-left .jd-category-left-con a {
+    font: 12px sans-serif;
+}
+.jd-category-right {
+    overflow: hidden;
+    height: 100%;
+    padding: 10px 12px;
+}
+.jd-category-right-con {
+    width: 100%;
+}
+.jd-category-right .category-banner {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.jd-category-right .category-banner img {
+    width: 100%;
+    display: block;
+}
+.jd-category-right .category-box h3 {
+    color: #666;
+    font-size: 15px;
+    line-height: 30px;
+}
+.jd-category-right .category-box li {
+    width: 33.333%;
+    float: left;
+}
+.jd-category-right .category-box a {
+    width: 100%;
+}
+.jd-category-right .category-box img {
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+}
+.jd-category-right .category-box p {
+    text-align: center;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+

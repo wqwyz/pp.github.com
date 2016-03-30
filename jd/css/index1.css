@@ -1,0 +1,280 @@
+/*.shortcut  search  b*/
+.shortcut-search {
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+}
+.dropdown {
+    width: 210px;
+    height: 44px;
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+.dropdown .all {
+    display: block;
+    width: 192px;
+    height: 44px;
+    padding: 0 9px;
+    background-color: #B1191A;
+    color: #fff;
+    font: 400 15px/44px "microsoft yahei";
+}
+.quicksearch {
+    height: 44px;
+    float: left;
+}
+.quicksearch li {
+    float: left;
+}
+.quicksearch a {
+    font: 400 15px/44px "microsoft yahei";
+    padding: 0 20px;
+}
+.quicksearch .bfive {
+    position: relative;
+}
+.quicksearch .five {
+    position: absolute;
+    width: 27px;
+    height: 18px;
+    background: url(../images/five.png) no-repeat;
+    position: absolute;
+    top: -2px;
+    right: -48px;
+}
+.yiyuan a {
+    display: inline-block;
+    width: 140px;
+    height: 44px;
+    background: url(../images/computer.jpg) no-repeat;
+    float: right;
+}
+.detail {
+    background-color: #C81623;
+    border-left: 2px solid #B1191A;
+    margin-top: 2px;
+}
+.detail .item {
+    height: 31px;
+    padding: 0 10px;
+}
+.detail .item a {
+    font: 12px/31px "microsoft yahei";
+    float: left;
+    padding: 0;
+    color: #fff;
+}
+.item i {
+    color: #fff;
+    font: 400 12px/31px consolas;
+    float: right;
+}
+/*.shortcut  search  e*/
+/*.content  b*/
+.content {
+    height: 466px;
+    position: relative;
+}
+.flow {
+    width: 730px;
+    height: 454px;
+    margin: 12px 0 0 220px;
+    float: left;
+    position: relative;
+}
+.flow .datu {
+    display: inline-block;
+    width: 730px;
+    height: 454px;
+    background: url(../images/shoose.jpg) no-repeat;
+}
+.flow ul {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    margin-left: -90px;
+    float: left;
+}
+.flow li {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #3E3E3E;
+    text-align: center;
+    float: left;
+    margin-right: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.flow .left,
+.flow .right,
+.today-r .left,
+.today-r .right {
+    position: absolute;
+    top: 50%;
+    width: 28px;
+    height: 62px;
+    background: rgba(0,0,0,.3);
+    margin-top: -31px;
+    text-align: center;
+}
+.flow .left:hover,
+.today-r .left:hover {
+    background: rgba(0,0,0,.5);
+}
+.flow .right:hover,
+.today-r .right:hover {
+    background: rgba(0,0,0,.5);
+}
+.flow .left,
+.today-r .left{
+    left: 0;
+}
+.flow .right,
+.today-r .right{
+    right: 0;;
+}
+.flow i,
+.today-r i {
+    color: #fff;
+    font: 30px/62px "sonsoals";
+}
+.some {
+    width: 248px;
+    height: 453px;
+    float: right;
+    margin-top: 12px;
+    border: 1px solid #E4E4E4;
+    overflow: hidden;
+}
+.fast {
+    height: 200px;
+    border-bottom: 1px dashed #E4E4E4;
+}
+.fast .news ,
+.life-service {
+    height: 43px;
+    border-bottom: 1px dotted #E4E4E4;
+    font: 400 16px/43px "microsoft yahei";
+    padding: 0 15px;
+}
+.fast .news span {
+    font: 12px/43px "sonsoals";
+    float: right;
+}
+.news-content {
+    padding: 8px 0 0 15px;
+}
+.news-content li {
+    line-height: 27px;
+}
+.news-content i {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.life-content a {
+    display: inline-block;
+    width: 62px;
+    height: 70px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    border-top: 0 none;
+    margin-left: -1px;
+    position: relative;
+}
+.life-content ul {
+    width: 280px;
+}
+.life-content i {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    left: 18px;
+}
+.life-content .one {
+    background: url(../images/fly.png) no-repeat 0 -25px;
+}
+.life-content .two {
+    background: url(../images/fly.png) no-repeat 0 -50px;
+}
+.life-content .three {
+    background: url(../images/fly.png) no-repeat 0 -75px;
+}
+.life-content .four {
+    background: url(../images/fly.png) no-repeat 0 -100px;
+}
+.life-content s {
+    position: absolute;
+    bottom: 5px;
+    left: 18px;
+}
+.life-content .song {
+    background: url(../images/send.png) no-repeat top right;
+}
+/*.content  e*/
+/*.banner603   b*/
+.banner {
+    position: relative;
+}
+.banner a {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 603px;
+    background: url(../images/banner.jpg) no-repeat top center;
+    margin-left: 1px;
+}
+/*.banner603  e*/
+/*.today  b*/
+.today {
+    width: 1210px;
+    height: 190px;
+    position: relative;
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+.today-l .tuijian {
+    width: 210px;
+    height: 151px;
+    float: left;
+    background: url(../images/today.png) no-repeat -213px -136px;
+}
+.today-r {
+    width: 1000px;
+    float: left;
+    position: relative;
+}
+.today-r ul {
+    width: 500%;
+}
+.today-r li a {
+    float: left;
+}
+.today .one {
+    width: 250px;
+    height: 164px;
+    background: url(../images/t1.jpg) no-repeat;
+    margin-right: 1px;
+}
+.today .two {
+    width: 250px;
+    height: 164px;
+    background: url(../images/t2.jpg) no-repeat;
+    margin-right: 1px;
+}
+.today .three {
+    width: 250px;
+    height: 164px;
+    background: url(../images/t3.jpg) no-repeat;
+    margin-right: 1px;
+}
+.today .four {
+    width: 250px;
+    height: 164px;
+    background: url(../images/t4.jpg) no-repeat;
+    margin-right: 1px;
+}
+/*.today  e*/
+

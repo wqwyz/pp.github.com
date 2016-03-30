@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:before,.clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+a {
+    text-decoration: none;
+}
+/*top开始*/
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+.viphead {
+    width: 100%;
+    height: 107px;
+    background: url(../images/bj_header.gif);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.viphead-title {
+    position: relative;
+}
+.viphead-title .logo {
+    width: 154px;
+    height: 144px;
+    background: url("../images/logo.png") no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: -10000em;
+    z-index: 10;
+}
+.viphead-title-list {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.viphead-title-list a {
+    color: #fff;
+    font: 16px/56px "宋体";
+    padding-right: 11px;
+    padding-left: 11px;
+    text-align: center;
+    margin-left: 20px;
+}
+/*top结束*/
+/*banner轮播开始*/
+.banner {
+    width: 100%;
+    height: 294px;
+    position: relative;
+    margin-top: 107px;
+}
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    cursor: pointer;
+}
+.banner ul {
+    position: absolute;
+    list-style: none;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -48px;
+}
+.banner li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #cccccc;
+    opacity: .6;
+    cursor: pointer;
+}
+.banner li:hover {
+    border-color: #4e5152;
+}
+/*banner轮播结束*/
+/*content开始*/
+.content {
+    width: 1000px;
+    padding: 19px 0;
+    margin: 0 auto;
+}
+.content .story {
+    float: left;
+    margin: 11px 4px;
+    position: relative;
+}
+.content .story .go {
+    width: 318px;
+    height: 451px;
+    border: 4px solid transparent;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+}
+.content .story .go:hover {
+    border-color: #ff7400;
+}
+.content h3 {
+    font: 18px/60px "simsun";
+    color: #646464;
+}
+.content h3 span {
+    font: bold 22px/60px "simsun";
+    color: #ff7400;
+}
+.content h3 a {
+    text-decoration: none;
+    color: #646464;
+}
+.content h3 a:hover {
+    color: #ff7400;
+}
+.content dl {
+    width: 322px;
+    height: 455px;
+    border: 1px solid #dcdcdc;
+}
+.content .introduce {
+    border-bottom: 1px dashed #dcdcdc;
+    margin: 4px 18px;
+}
+.content h4 {
+    font: 12px/18px "microsoft yahei";
+    background: url("../images/focus-success_03.jpg") no-repeat;
+    padding-left: 4px;
+    color: #fff;
+}
+.content h4 span {
+    float: right;
+    color: #8b8b8b;
+}
+.content p {
+    padding: 3px 0;
+    font: 12px/22px "microsoft yahei";
+    color: #646464;
+}
+.content p span {
+    color: #ff7400;
+}
+.content .wish {
+    margin: 4px 18px;
+    padding: 3px;
+    color: #ff7400;
+    font: 12px/22px "microsoft yahei";
+}
+.content .wish img {
+    padding-right: 10px;
+}
+/*content结束*/
+/*foot开始*/
+.end {
+    margin-top: 12px;
+    height: 224px;
+    background: #272732 ;
+    font: 14px/27px "Microsoft Yahei";
+    color: #686870;
+}
+.end-logo a {
+    display: inline-block;
+    width: 175px;
+    height: 42px;
+    background: url("../images/logo2.png");
+    text-indent: -99999px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.end-text {
+    width: 550px;
+    border-right: 1px solid #686870;
+    position: absolute;;
+}
+.end-text-copy {
+    font-size: 2px;
+}
+.end ul {
+    float: right;
+}
+.end ul li {
+    float: left;
+    padding-right: 13px;
+}
+.end ul li i {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #686870;
+}
+/*foot结束*/
+/*帮助反馈，回到顶部开始*/
+.goBack {
+    position: fixed;
+    bottom:100px;
+    right:0;
+}
+.goBack a{
+    display: block;
+    padding:10px;
+    border: 1px solid #E9E9E9;
+    border-radius: 5px 0 0 5px;
+    width:75px;
+    background: url(../images/help.png) no-repeat 10px center;
+    padding-left:35px;
+    color:#333;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    left:88px;
+}
+.goBack .goTop{
+    background-image: url(../images/app.png);
+}
+/*帮助反馈，回到顶部结束*/

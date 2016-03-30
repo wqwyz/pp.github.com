@@ -1,0 +1,311 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+/*第三方*/
+@font-face {
+    font-family: "pp";
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../font/MiFie-Web-Font.svg') format('svg'),
+    url('../font/MiFie-Web-Font.ttf') format('truetype'),
+    url('../font/MiFie-Web-Font.woff') format('woff');
+}
+.icon {
+    font-family: "pp";
+    font-weight: normal;
+    font-style: normal;
+}
+.icon-phone::before {
+    content: "\e908";
+    font-size: 11px;
+}
+.icon-telephone::before {
+    content: '\e909';
+    font-size: 11px;
+}
+.wjs-icon::before {
+    content: '\e920';
+    font-size: 50px;
+    color: #E9232C;
+    margin-top: 10px;
+}
+.wjs-name::before {
+    content: '\e93e';
+    font-size: 40px;
+    color: #000000;
+    margin-top: 10px;
+}
+.icon-ts::before {
+    content: '\e907';
+    font-size: 30px;
+}
+/*header*/
+
+header .topbar {
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 40px;
+    font-size: 10px;
+}
+header .topbar .row div + div {
+    border-left: 1px solid #e0e0e0;
+}
+header .topbar .row a {
+    text-decoration: none;
+}
+header .topbar .row .tb1 img {
+    display: none;
+}
+header .topbar .row .tb1:hover img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+header .tb4 .text-muted {
+    margin-left: 15px;
+    font-size: 13px;
+}
+.btn-pp {
+    font-size: 12px;
+    color: #fff;
+    background-color: #E9232C;
+    border-color: #ccc;
+}
+.btn-pp:focus,
+.btn-pp.focus {
+    color: #fff;
+    background-color: #E9232C;
+    border-color: #8c8c8c;
+}
+.btn-pp:hover {
+    color: #fff;
+    background-color: #E9232C;
+    border-color: #adadad;
+}
+.btn-pp:active,
+.btn-pp.active,
+.open > .dropdown-toggle.btn-pp {
+    color: #fff;
+    background-color: #E9232C;
+    border-color: #adadad;
+}
+.btn-pp:active:hover,
+.btn-pp.active:hover,
+.open > .dropdown-toggle.btn-pp:hover,
+.btn-pp:active:focus,
+.btn-pp.active:focus,
+.open > .dropdown-toggle.btn-pp:focus,
+.btn-pp:active.focus,
+.btn-pp.active.focus,
+.open > .dropdown-toggle.btn-pp.focus {
+    color: #fff;
+    background-color: #E9232C;
+    border-color: #8c8c8c;
+}
+.btn-pp:active,
+.btn-pp.active,
+.open > .dropdown-toggle.btn-pp {
+    background-image: none;
+}
+.btn-pp.disabled:hover,
+.btn-pp[disabled]:hover,
+fieldset[disabled] .btn-pp:hover,
+.btn-pp.disabled:focus,
+.btn-pp[disabled]:focus,
+fieldset[disabled] .btn-pp:focus,
+.btn-pp.disabled.focus,
+.btn-pp[disabled].focus,
+fieldset[disabled] .btn-pp.focus {
+    background-color: #E9232C;
+    border-color: #ccc;
+}
+.btn-pp .badge {
+    color: #fff;
+    background-color: #E9232C;
+}
+header .navbar-brand-mine {
+    line-height: 35px;
+}
+header .navbar-collapse-mine li:hover a {
+    border-bottom-color: #E9232C;
+}
+header .navbar-collapse-mine li:first-child a {
+    border-bottom: 3px solid #E9232C;
+}
+
+.navbar-collapse-mine {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+}
+.navbar-collapse-mine.in {
+    overflow-y: auto;
+}
+@media (min-width: 768px) {
+    .navbar-collapse-mine {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .navbar-collapse-mine.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    .navbar-collapse-mine.in {
+        overflow-y: visible;
+    }
+    .navbar-fixed-top .navbar-collapse-mine,
+    .navbar-static-top .navbar-collapse-mine,
+    .navbar-fixed-bottom .navbar-collapse-mine {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.navbar-fixed-top .navbar-collapse-mine,
+.navbar-fixed-bottom .navbar-collapse-mine {
+    max-height: 340px;
+}
+@media (max-device-width: 480px) and (orientation: landscape) {
+    .navbar-fixed-top .navbar-collapse-mine,
+    .navbar-fixed-bottom .navbar-collapse-mine {
+        max-height: 200px;
+    }
+}
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse-mine,
+.container-fluid > .navbar-collapse-mine {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width: 768px) {
+    .container > .navbar-header,
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse-mine,
+    .container-fluid > .navbar-collapse-mine {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+header .navbar-mine {
+    margin-bottom: 0;
+    background-color: #fff;
+}
+header .navbar-collapse-mine a {
+    line-height: 40px;
+    border-bottom: 3px solid transparent;
+}
+.nav-tabs {
+    border-bottom: 1px solid #c0c0c0;
+}
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.nav-tabs > li > a:hover {
+    border-color: #eee #eee #ddd;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #333;
+    cursor: default;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-bottom: 3px solid #E9232C;
+}
+/*/header*/
+/*轮播图*/
+#carousel-pp .carousel-inner > .item {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+#carousel-pp .carousel-inner>.item img {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    #carousel-pp .carousel-inner > .item {
+        height: 410px;
+    }
+    #carousel-pp .carousel-inner>.item img {
+        display: none;
+    }
+}
+
+/*/轮播图*/
+
+/*网站特色*/
+.wzts {
+    padding: 50px 0;
+}
+.wzts a {
+    text-decoration: none;
+}
+.wzts a:hover {
+    color: #E9232C;
+}
+.wzts .row div {
+    padding: 5px 0;
+}
+/*/网站特色*/
+
+/*宣传片*/
+.public {
+    height: 60px;
+    border: 1px solid #e0e0e0;
+    line-height: 60px;
+    font-size: 15px;
+}
+.public .icon-clock::before {
+    content: '\e906';
+    font-size: 20px;
+}
+.public .icon-video::before {
+    content: '\e905';
+    font-size: 20px;
+}
+.public span {
+    color: #E9232C;
+}
+.public .just-now {
+    color: #E9232C;
+    text-decoration: none;
+    border-bottom: 1px dashed #E9232C;
+}
+/*/宣传片*/
+
+/*产品*/
+.products {
+    background-color: #f0f0f0;
+}
+.products .nav-tabs {
+    padding: 30px 20px 0;
+    font-size: 16px;
+}
+.products .nav-tabs a {
+    color: #444;
+}
+.products .scroll ul {
+    overflow: auto;
+}
+/*/产品*/
+
+
+
+
+
+
+
+
+

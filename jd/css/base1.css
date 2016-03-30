@@ -1,0 +1,421 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+/****site.nav  begin****/
+.site-nav {
+    height: 30px;
+    background-color: #F1F1F1;
+}
+.site-nav .site-nav-send {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    padding: 0 20px 0 10px;
+}
+.site-nav .site-nav-send:hover {
+    background-color: white;
+}
+.site-nav i {
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    overflow: hidden;
+}
+.site-nav i s {
+    width: 30px;
+    height: 8px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+.site-nav li {
+    float: left;
+    line-height: 30px;
+    padding: 0 10px;
+    position: relative;
+}
+.site-nav .line {
+    width: 1px;
+    height: 12px;
+    background-color: #DDDDDD;
+    margin-top: 9px;
+    padding: 0;
+}
+.site-nav .jiao {
+    padding-right: 28px;
+}
+.site-nav .jiao:hover {
+    background-color: white;
+}
+.site-nav .phone {
+    padding-left: 27px;
+}
+.site-nav .tel {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background: url("../images/tel.png") no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+/****site.nav  end****/
+/****banner  begin****/
+.site-banner {
+    height: 80px;
+    background-color: #8B25C6;
+}
+.site-banner .w {
+    height: 80px;
+    background: url("../images/topbanner.jpg") no-repeat;
+    position: relative;
+}
+.site-banner a {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url("../images/close.png") no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+}
+.site-banner a:hover {
+    background-position: bottom;
+}
+/****banner  end****/
+/****search  begin****/
+.search .jd-logo {
+    width: 362px;
+    height: 100px;
+    float: left;
+    position: relative;
+}
+.search .jd-logo .logo {
+    display: inline-block;
+    width: 270px;
+    height: 60px;
+    background: url("../images/jd-logo.png") no-repeat;
+    margin-top: 20px;
+}
+.search .jd-logo .dong {
+    display: inline-block;
+    width: 180px;
+    height: 80px;
+    background: url("../images/dong.gif") no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 165px;
+}
+.search .jd-input {
+    width: 538px;
+    height: 36px;
+    float: left;
+    margin-top: 25px;
+}
+.jd-input a {
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    font: 16px/36px "microsoft yahei";
+    text-align: center;
+    background-color: #B61D1D;
+    float: left;
+    color: #fff;
+}
+.jd-input input {
+    width: 446px;
+    height: 24px;
+    border: 2px solid #B61D1D;
+    padding: 4px;
+    font: 14px/24px "microsoft";
+    color: #A6A6BF;
+    float: left;
+}
+.search .jd-car {
+    width: 139px;
+    height: 34px;
+    border: 1px solid #DFDFDF;
+    margin: 25px 65px 0 0;
+    float: right;
+    position: relative;
+    text-align: center;
+}
+.jd-car i {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 18px;
+    height: 16px;
+    background: url(../images/tel.png) no-repeat 0 -90px;
+}
+.jd-car a {
+    font-size: 12px;
+    line-height: 34px;
+}
+.jd-car s {
+    font: 400 13px/34px "simsun";
+    position: absolute;
+    top: 0;
+    right: 13px;
+}
+.jd-car span {
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    width: 16px;
+    height: 14px;
+    border-radius: 7px 7px 7px 0;
+    background-color: #C81623;
+    color: #fff;
+    text-align: center;
+}
+.search .jd-more {
+    width: 490px;
+    height: 28px;
+    float: left;
+}
+.jd-more a {
+    font: 12px/28px "simsun";
+    margin-right: 12px;
+}
+/****search  end****/
+/****foot  begin****/
+.dkhs {
+    height: 94px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.dkhs i {
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+.dkhs .mes1 {
+    margin-left: -600px;
+}
+.dkhs .mes2 {
+    margin-left: -300px;
+}
+
+.dkhs .mes4 {
+    margin-left: 300px;
+}
+.foot .shopping {
+    height: 202px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.foot dl {
+    width: 200px;
+    float: left;
+    margin-top: 19px;
+}
+.foot .last-dl {
+    width: 100px;
+}
+.foot dt,
+.map .qx {
+    font: 400 16px/27px "microsoft yahei";
+}
+.map .qx {
+    margin-top: 5px;
+}
+.foot dd,
+.map .jt {
+    font: 12px/20px "simsun";
+}
+.map .jt {
+    margin-top: 12px;
+}
+.map a {
+    float: right;
+}
+.map {
+    width: 203px;
+    height: 168px;
+    background: url(../images/china.png) no-repeat left bottom;
+    float: right;
+    margin-top: 15px;
+    padding: 0 6px 0 18px;
+}
+.others {
+    text-align: center;
+}
+.others a {
+    display: inline-block;
+    margin: 0 10px;
+}
+.others-a {
+    margin: 23px 0 15px 0;
+}
+.last {
+    text-align: center;
+}
+.last i {
+    margin-right: 10px;
+}
+.mes1 {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../images/mes1.png) no-repeat;
+}
+.mes2 {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../images/mes2.png) no-repeat;
+}
+.mes3 {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../images/mes3.png) no-repeat;
+}
+.mes4 {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../images/mes4.png) no-repeat;
+}
+.mes5 {
+    display: inline-block;
+    width: 185px;
+    height: 32px;
+    background: url(../images/mes5.png) no-repeat;
+}
+
+
+
+/****foot  end****/
+/****site.nav  begin****/
+/****site.nav  end****/
+/****site.nav  begin****/
+/****site.nav  end****/
+/****site.nav  begin****/
+/****site.nav  end****/
+/****site.nav  begin****/
+/****site.nav  end****/
